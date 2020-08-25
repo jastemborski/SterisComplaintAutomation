@@ -9,6 +9,7 @@ trigger CMPL123CME__Complaint_Trigger on CMPL123CME__Complaint__c (before insert
     /* After Insert */
     else if(Trigger.isInsert && Trigger.isAfter){
         // Place your custom code here 
+        fflib_SObjectDomain.triggerHandler(Complaints.class);
         X123handler.handleAfterInsert();
     }
 
