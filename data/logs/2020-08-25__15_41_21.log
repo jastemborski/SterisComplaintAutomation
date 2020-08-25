@@ -1,0 +1,242 @@
+
+[15:41:21.536] Execution of the command sfdmu:run has been started.
+
+[15:41:21.540] LOADING AND VALIDATING THE PACKAGE SCRIPT...
+[15:41:21.544] {"Running version":"3.5.10"}
+
+[15:41:21.753] Connecting to twdeqms@steris.com.dev using SFDX CLI...
+[15:41:31.814] Successfully connected to twdeqms@steris.com.dev.
+[15:41:31.818] {"SOURCE":"csvfile.","TARGET":"twdeqms@steris.com.dev.","Package script":"/Users/jonathan.astemborski/Documents/Sparta/Clients/TWD/SterisComplaintAutomation/data/export.json."}
+
+[15:41:31.820] GETTING AND ANALYSING OBJECTS METADATA...
+[15:41:31.820] Processing the sObject SKU__c...
+[15:41:31.821] Getting metadata for SKU__c (TARGET)
+[15:41:32.209] Processing the sObject SKU__c...
+[15:41:32.212] Getting metadata for CMPL123__Product__c (TARGET)
+
+[15:41:32.874] PREPARING DATA MIGRATION JOB...
+[15:41:32.876] Building migration strategy...
+[15:41:32.878] {"Order of objects to retrieve data":"SKU__c; CMPL123__Product__c"}
+[15:41:32.878] {"Order of objects to update data":"CMPL123__Product__c; SKU__c"}
+[15:41:32.999] Validating and repairing of the source CSV files...
+[15:41:37.763] Amount of updated source CSV files: 0
+[15:41:37.765] There are no issues found during the last validation of the source CSV files.
+[15:41:37.765] Validating and repairing of the source CSV files have finished.
+[15:41:37.766] Preparing has been finished.
+
+[15:41:37.772] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[15:41:38.157] {CMPL123__Product__c} Total amount of the TARGET records: 0
+[15:41:38.407] {SKU__c} Total amount of the TARGET records: 1
+
+[15:41:38.410] DELETING OLD DATA FROM THE TARGET...
+[15:41:38.411] {SKU__c} Nothing to delete.
+[15:41:38.411] {CMPL123__Product__c} Nothing to delete.
+[15:41:38.411] Deleting old data from the Target was skipped.
+[15:41:38.412] Ready to process the data.
+
+[15:41:38.413] RETRIEVING THE DATA STEP 1...
+[15:41:38.414] {SKU__c} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[15:41:43.486] {SKU__c} Retrieving the SOURCE data has been completed. Fetched 445175 new records.
+[15:41:43.491] {CMPL123__Product__c} Retrieving the SOURCE data from CSV file (STEP 1: all records)...
+[15:41:43.495] {CMPL123__Product__c} Retrieving the SOURCE data has been completed. Fetched 0 new records.
+[15:41:43.496] Retrieving the data STEP 1 has been completed.
+
+[15:41:43.497] RETRIEVING THE DATA STEP 2...
+[15:41:43.497] PASS 1
+[15:41:43.498] =============
+[15:41:43.498] No records
+
+[15:41:43.499] PASS 2
+[15:41:43.500] =============
+[15:41:43.500] No records
+
+[15:41:43.501] PASS 3
+[15:41:43.501] =============
+[15:41:43.501] No records
+
+[15:41:43.502] PASS 4
+[15:41:43.503] =============
+[15:41:43.503] No records
+
+[15:41:43.504] TARGET
+[15:41:43.504] =============
+[15:41:43.505] No records
+[15:41:43.506] Retrieving the data STEP 2 has been completed.
+
+[15:41:43.507] DATA RETRIEVING SUMMARY
+[15:41:43.507] {SKU__c} Total retrieved within all steps (source/target): 445175/0 records.
+[15:41:43.508] {CMPL123__Product__c} Total retrieved within all steps (source/target): 0/0 records.
+
+[15:41:43.509] UPDATING THE TARGET STEP 1...
+[15:41:46.257] {SKU__c} Number of records to Insert: 445175.
+[15:41:57.259] {SKU__c} The Insert API operation has been started using Bulk API V2.0.
+[15:41:57.649] [Job# 7501D000003DrSzQAK:Insert] {SKU__c} The job has been created. Uploading data...
+[15:42:16.816] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} The batch has been created. Uploading data...
+[15:42:17.194] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} The data has been uploaded. Processing...
+[15:42:22.819] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 600 records succeeded, 0 records failed.
+[15:42:27.788] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 1400 records succeeded, 0 records failed.
+[15:42:32.726] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 2600 records succeeded, 0 records failed.
+[15:42:37.728] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 4600 records succeeded, 0 records failed.
+[15:42:42.836] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 6200 records succeeded, 0 records failed.
+[15:42:47.799] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 8400 records succeeded, 0 records failed.
+[15:42:52.773] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 11200 records succeeded, 0 records failed.
+[15:42:58.556] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 14000 records succeeded, 0 records failed.
+[15:43:03.612] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 16600 records succeeded, 0 records failed.
+[15:43:07.881] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 19000 records succeeded, 0 records failed.
+[15:43:12.723] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 22400 records succeeded, 0 records failed.
+[15:43:17.867] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 26000 records succeeded, 0 records failed.
+[15:43:22.830] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 29800 records succeeded, 0 records failed.
+[15:43:27.941] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 34600 records succeeded, 0 records failed.
+[15:43:32.835] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 38800 records succeeded, 0 records failed.
+[15:43:37.636] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 43400 records succeeded, 0 records failed.
+[15:43:42.793] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 48600 records succeeded, 0 records failed.
+[15:43:47.653] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 53000 records succeeded, 0 records failed.
+[15:43:52.757] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 57600 records succeeded, 0 records failed.
+[15:43:57.643] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 62600 records succeeded, 0 records failed.
+[15:44:03.109] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 67600 records succeeded, 0 records failed.
+[15:44:08.29] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 72600 records succeeded, 0 records failed.
+[15:44:12.874] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 77600 records succeeded, 0 records failed.
+[15:44:17.871] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 82800 records succeeded, 0 records failed.
+[15:44:23.5] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 88000 records succeeded, 0 records failed.
+[15:44:27.707] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 93400 records succeeded, 0 records failed.
+[15:44:32.947] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 98600 records succeeded, 0 records failed.
+[15:44:38.78] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 103600 records succeeded, 0 records failed.
+[15:44:42.971] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 108800 records succeeded, 0 records failed.
+[15:44:48.4] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 114400 records succeeded, 0 records failed.
+[15:44:52.748] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 119400 records succeeded, 0 records failed.
+[15:44:57.850] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 124800 records succeeded, 0 records failed.
+[15:45:02.817] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 129400 records succeeded, 0 records failed.
+[15:45:07.817] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 130400 records succeeded, 1000 records failed.
+[15:45:12.734] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 132200 records succeeded, 2800 records failed.
+[15:45:17.854] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 133800 records succeeded, 4400 records failed.
+[15:45:22.825] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 135400 records succeeded, 6000 records failed.
+[15:45:27.893] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 136800 records succeeded, 7400 records failed.
+[15:45:32.966] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 138400 records succeeded, 9000 records failed.
+[15:45:37.793] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 139800 records succeeded, 10400 records failed.
+[15:45:43.339] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 141400 records succeeded, 12000 records failed.
+[15:45:47.871] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 142800 records succeeded, 13400 records failed.
+[15:45:52.757] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 144200 records succeeded, 14800 records failed.
+[15:45:57.901] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 146000 records succeeded, 16600 records failed.
+[15:46:02.746] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 147200 records succeeded, 17800 records failed.
+[15:46:08.9] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 148800 records succeeded, 19400 records failed.
+[15:46:12.965] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 150400 records succeeded, 21000 records failed.
+[15:46:18.270] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 151800 records succeeded, 22400 records failed.
+[15:46:22.897] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 153200 records succeeded, 23800 records failed.
+[15:46:28.129] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 154600 records succeeded, 25200 records failed.
+[15:46:32.886] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 156200 records succeeded, 26800 records failed.
+[15:46:38.267] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 157600 records succeeded, 28200 records failed.
+[15:46:42.971] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 158800 records succeeded, 29400 records failed.
+[15:46:48.429] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 160400 records succeeded, 31000 records failed.
+[15:46:53.177] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 161800 records succeeded, 32400 records failed.
+[15:46:57.851] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 163000 records succeeded, 33600 records failed.
+[15:47:03.9] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 164800 records succeeded, 35400 records failed.
+[15:47:08.372] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 166200 records succeeded, 36800 records failed.
+[15:47:12.876] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 167600 records succeeded, 38200 records failed.
+[15:47:18.51] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 169000 records succeeded, 39600 records failed.
+[15:47:22.929] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 170600 records succeeded, 41200 records failed.
+[15:47:27.935] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 172400 records succeeded, 43000 records failed.
+[15:47:33.347] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 173800 records succeeded, 44400 records failed.
+[15:47:38.165] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 175600 records succeeded, 46200 records failed.
+[15:47:43.123] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 176800 records succeeded, 47400 records failed.
+[15:47:48.484] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 178600 records succeeded, 49200 records failed.
+[15:47:53.55] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 180200 records succeeded, 50800 records failed.
+[15:47:57.839] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 181400 records succeeded, 52000 records failed.
+[15:48:02.957] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 183200 records succeeded, 53800 records failed.
+[15:48:07.946] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 184400 records succeeded, 55000 records failed.
+[15:48:12.850] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 186200 records succeeded, 56800 records failed.
+[15:48:17.956] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 188000 records succeeded, 58600 records failed.
+[15:48:22.958] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 189200 records succeeded, 59800 records failed.
+[15:48:28.67] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 191000 records succeeded, 61600 records failed.
+[15:48:33.357] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 192400 records succeeded, 63000 records failed.
+[15:48:37.988] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 193800 records succeeded, 64400 records failed.
+[15:48:43.15] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 195200 records succeeded, 65800 records failed.
+[15:48:47.986] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 196600 records succeeded, 67200 records failed.
+[15:48:53.128] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 198200 records succeeded, 68800 records failed.
+[15:48:58.60] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 199600 records succeeded, 70200 records failed.
+[15:49:03.27] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 201000 records succeeded, 71600 records failed.
+[15:49:07.876] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 202600 records succeeded, 73200 records failed.
+[15:49:13.3] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 204200 records succeeded, 74800 records failed.
+[15:49:18.97] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 205400 records succeeded, 76000 records failed.
+[15:49:23.108] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 207400 records succeeded, 78000 records failed.
+[15:49:27.880] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 208400 records succeeded, 79000 records failed.
+[15:49:33.25] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 210200 records succeeded, 80800 records failed.
+[15:49:38.531] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 212000 records succeeded, 82600 records failed.
+[15:49:43.123] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 213000 records succeeded, 83600 records failed.
+[15:49:48.42] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 214800 records succeeded, 85400 records failed.
+[15:49:52.918] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 216000 records succeeded, 86600 records failed.
+[15:49:58.50] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 217800 records succeeded, 88400 records failed.
+[15:50:03.26] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 219000 records succeeded, 89600 records failed.
+[15:50:08.40] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 220800 records succeeded, 91400 records failed.
+[15:50:13.522] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 222000 records succeeded, 92600 records failed.
+[15:50:18.159] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 223800 records succeeded, 94400 records failed.
+[15:50:23.195] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 225000 records succeeded, 95600 records failed.
+[15:50:28.406] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 226800 records succeeded, 97400 records failed.
+[15:50:33.151] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 228000 records succeeded, 98600 records failed.
+[15:50:37.962] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 229400 records succeeded, 100000 records failed.
+[15:50:43.94] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 230600 records succeeded, 101200 records failed.
+[15:50:48.120] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 232000 records succeeded, 102600 records failed.
+[15:50:53.157] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 233600 records succeeded, 104200 records failed.
+[15:50:58.118] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 235000 records succeeded, 105600 records failed.
+[15:51:03.220] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 236600 records succeeded, 107200 records failed.
+[15:51:08.54] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 238000 records succeeded, 108600 records failed.
+[15:51:13.69] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 239600 records succeeded, 110200 records failed.
+[15:51:17.971] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 240800 records succeeded, 111400 records failed.
+[15:51:23.594] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 242400 records succeeded, 113000 records failed.
+[15:51:27.997] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 244000 records succeeded, 114600 records failed.
+[15:51:33.218] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 245400 records succeeded, 116000 records failed.
+[15:51:38.257] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 246800 records succeeded, 117400 records failed.
+[15:51:43.195] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 248400 records succeeded, 119000 records failed.
+[15:51:48.519] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 250000 records succeeded, 120600 records failed.
+[15:51:53.154] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 251400 records succeeded, 122000 records failed.
+[15:51:58.14] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 252600 records succeeded, 123200 records failed.
+[15:52:03.615] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 254200 records succeeded, 124800 records failed.
+[15:52:08.108] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 255400 records succeeded, 126000 records failed.
+[15:52:13.224] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 257200 records succeeded, 127800 records failed.
+[15:52:18.239] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 258600 records succeeded, 129200 records failed.
+[15:52:23.304] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 259800 records succeeded, 130400 records failed.
+[15:52:28.33] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 261400 records succeeded, 132000 records failed.
+[15:52:34.271] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 263000 records succeeded, 133600 records failed.
+[15:52:38.273] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 264000 records succeeded, 134600 records failed.
+[15:52:43.243] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 265200 records succeeded, 135800 records failed.
+[15:52:48.217] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 266800 records succeeded, 137400 records failed.
+[15:52:53.80] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 268000 records succeeded, 138600 records failed.
+[15:52:58.54] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 269400 records succeeded, 140000 records failed.
+[15:53:03.502] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 271000 records succeeded, 141600 records failed.
+[15:53:08.200] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 272000 records succeeded, 142600 records failed.
+[15:53:13.204] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 273000 records succeeded, 143600 records failed.
+[15:53:18.254] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 274600 records succeeded, 145200 records failed.
+[15:53:23.302] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 275800 records succeeded, 146400 records failed.
+[15:53:28.363] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 277000 records succeeded, 147600 records failed.
+[15:53:33.377] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 278200 records succeeded, 148800 records failed.
+[15:53:38.575] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 279800 records succeeded, 150400 records failed.
+[15:53:43.93] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 280800 records succeeded, 151400 records failed.
+[15:53:48.483] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 282600 records succeeded, 153200 records failed.
+[15:53:53.711] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 283600 records succeeded, 154200 records failed.
+[15:53:58.375] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 284800 records succeeded, 155400 records failed.
+[15:54:03.244] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 286200 records succeeded, 156800 records failed.
+[15:54:08.268] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 287600 records succeeded, 158200 records failed.
+[15:54:13.228] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 288600 records succeeded, 159200 records failed.
+[15:54:18.162] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 289800 records succeeded, 160400 records failed.
+[15:54:24.934] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 291600 records succeeded, 162200 records failed.
+[15:54:28.116] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 292600 records succeeded, 163200 records failed.
+[15:54:33.372] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 293600 records succeeded, 164200 records failed.
+[15:54:38.196] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 294800 records succeeded, 165400 records failed.
+[15:54:43.278] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 296400 records succeeded, 167000 records failed.
+[15:54:48.238] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 297600 records succeeded, 168200 records failed.
+[15:54:53.261] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 298600 records succeeded, 169200 records failed.
+[15:54:58.139] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 300000 records succeeded, 170600 records failed.
+[15:55:03.434] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 301200 records succeeded, 171800 records failed.
+[15:55:08.220] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 302400 records succeeded, 173000 records failed.
+[15:55:13.235] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 304000 records succeeded, 174600 records failed.
+[15:55:18.359] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 305000 records succeeded, 175600 records failed.
+[15:55:23.297] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 306400 records succeeded, 177000 records failed.
+[15:55:28.292] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 308000 records succeeded, 178600 records failed.
+[15:55:33.495] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 309400 records succeeded, 180000 records failed.
+[15:55:38.263] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 310200 records succeeded, 180800 records failed.
+[15:55:43.295] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 311800 records succeeded, 182400 records failed.
+[15:55:48.296] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 312600 records succeeded, 183200 records failed.
+[15:55:53.277] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 314400 records succeeded, 185000 records failed.
+[15:55:58.403] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 315600 records succeeded, 186200 records failed.
+[15:56:03.308] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 317000 records succeeded, 187600 records failed.
+[15:56:08.203] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 318600 records succeeded, 189200 records failed.
+[15:56:13.384] [Batch# 7501D000003DrSzQAK:Insert] {SKU__c} Processing... 320000 records succeeded, 190600 records failed.

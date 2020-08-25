@@ -1,4 +1,4 @@
-trigger CMPL123CME_Complaint_Trigger on CMPL123CME__Complaint__c (before insert,after insert,before update,after update,before delete,after delete,after undelete){
+trigger CMPL123_Complaint_Trigger on CMPL123CME__Complaint__c (before insert,after insert,before update,after update,before delete,after delete,after undelete){
     CMPL123.X123TriggerHandler X123handler = new CMPL123.X123TriggerHandler();
     /* Before Insert */
     if(Trigger.isInsert && Trigger.isBefore){

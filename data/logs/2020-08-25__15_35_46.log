@@ -1,0 +1,82 @@
+
+[15:35:46.616] Execution of the command sfdmu:run has been started.
+
+[15:35:46.620] LOADING AND VALIDATING THE PACKAGE SCRIPT...
+[15:35:46.624] {"Running version":"3.5.10"}
+
+[15:35:46.724] Connecting to twdeqms@steris.com.test using SFDX CLI...
+[15:36:16.73] Successfully connected to twdeqms@steris.com.test.
+[15:36:16.78] {"SOURCE":"twdeqms@steris.com.test.","TARGET":"csvfile.","Package script":"/Users/jonathan.astemborski/Documents/Sparta/Clients/TWD/SterisComplaintAutomation/data/export.json."}
+
+[15:36:16.79] GETTING AND ANALYSING OBJECTS METADATA...
+[15:36:16.80] Processing the sObject SKU__c...
+[15:36:16.80] Getting metadata for SKU__c (SOURCE)
+[15:36:16.341] Processing the sObject SKU__c...
+[15:36:16.345] Getting metadata for CMPL123__Product__c (SOURCE)
+
+[15:36:17.127] PREPARING DATA MIGRATION JOB...
+[15:36:17.127] Building migration strategy...
+[15:36:17.129] {"Order of objects to retrieve data":"SKU__c; CMPL123__Product__c"}
+[15:36:17.130] {"Order of objects to update data":"CMPL123__Product__c; SKU__c"}
+[15:36:17.130] Preparing has been finished.
+
+[15:36:17.132] GETTING THE TOTAL AMOUNT OF RECORDS LIMITED BY THE OBJECT'S SOQL QUERY...
+[15:36:17.429] {CMPL123__Product__c} Total amount of the SOURCE records: 0
+[15:36:33.677] {SKU__c} Total amount of the SOURCE records: 445175
+
+[15:36:33.679] DELETING OLD DATA FROM THE TARGET...
+[15:36:33.680] {SKU__c} Nothing to delete.
+[15:36:33.680] {CMPL123__Product__c} Nothing to delete.
+[15:36:33.681] Deleting old data from the Target was skipped.
+[15:36:33.681] Ready to process the data.
+
+[15:36:33.682] RETRIEVING THE DATA STEP 1...
+[15:36:33.683] {SKU__c} Retrieving the SOURCE data from Org (STEP 1: all records)...
+[15:36:33.684] {SKU__c} Query string: SELECT Id, EQUIPMENT_NUM__c, Facility__c, Item_Description__c, Item_Type__c, Name, Oracle_Facility__c, PF_PC__c, Product_Family__c, Product_Number_SKU__c, Serial_Number__c, Type__c, Product_Family__r.Name  FROM  SKU__c.
+[15:39:42.516] {SKU__c} Retrieving the SOURCE data has been completed. Fetched 445175 new records.
+[15:39:42.519] Retrieving the data STEP 1 has been completed.
+
+[15:39:42.521] RETRIEVING THE DATA STEP 2...
+[15:39:42.521] PASS 1
+[15:39:42.522] =============
+[15:39:42.522] No records
+
+[15:39:42.523] PASS 2
+[15:39:42.524] =============
+[15:39:42.524] No records
+
+[15:39:42.525] PASS 3
+[15:39:42.525] =============
+[15:39:42.687] No records
+
+[15:39:42.691] PASS 4
+[15:39:42.691] =============
+[15:39:42.845] No records
+
+[15:39:42.847] TARGET
+[15:39:42.848] =============
+[15:39:42.848] No records
+[15:39:42.849] Retrieving the data STEP 2 has been completed.
+
+[15:39:42.850] DATA RETRIEVING SUMMARY
+[15:39:42.850] {SKU__c} Total retrieved within all steps (source/target): 445175/0 records.
+[15:39:42.851] {CMPL123__Product__c} Total retrieved within all steps (source/target): 0/0 records.
+
+[15:39:42.852] UPDATING THE TARGET STEP 1...
+[15:39:42.853] {CMPL123__Product__c} Writing to the file /Users/jonathan.astemborski/Documents/Sparta/Clients/TWD/SterisComplaintAutomation/data/CMPL123__Product__c.csv.
+[15:39:42.854] {SKU__c} Writing to the file /Users/jonathan.astemborski/Documents/Sparta/Clients/TWD/SterisComplaintAutomation/data/SKU__c.csv.
+[15:39:45.144] {SKU__c} Updating the Target has been completed. Processed 445175 records.
+[15:39:45.144] Updating the Target (STEP 1) has been completed. Total processed 445175 records.
+
+[15:39:45.147] UPDATING THE TARGET STEP 2...
+[15:39:45.148] Nothing was updated
+
+[15:39:45.148] DATA PROCESSING SUMMARY
+[15:39:45.149] {SKU__c} Total processed within all steps (Insert + Update): 445175 records
+[15:39:45.149] {CMPL123__Product__c} Total processed within all steps (Insert + Update): 0 records
+
+[15:39:45.150] Writing to /Users/jonathan.astemborski/Documents/Sparta/Clients/TWD/SterisComplaintAutomation/data/MissingParentRecordsReport.csv...
+
+[15:39:45.152] Command succeeded.
+[15:39:45.152] Execution of the command sfdmu:run has been finished. Exit code 0 (SUCCESS).
+[15:39:45.153] Total time elapsed: 00h 03m 58s 536ms .

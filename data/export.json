@@ -1,0 +1,18 @@
+{
+    "objects": [
+     
+        {
+            "operation": "Insert",
+            "query": "SELECT EQUIPMENT_NUM__c,Facility__c,Id,Item_Description__c,Item_Type__c,Name,Oracle_Facility__c,PF_PC__c,Product_Family__c,Product_Number_SKU__c,Serial_Number__c,Type__c FROM SKU__c"
+        }
+       ],
+       "promptOnMissingParentObjects":false,
+       "allOrNone": false,
+       "bulkApiVersion": "2.0",
+       "createTargetCSVFiles": true,
+       "validateCSVFilesOnly": false,
+       "promptOnUpdateError": false,
+       "pollingIntervalMs": 5000,
+       "bulkThreshold": 200,
+       "apiVersion": "47.0"
+   }

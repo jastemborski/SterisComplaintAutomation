@@ -1,0 +1,7 @@
+
+[15:33:34.9] Execution of the command sfdmu:run has been started.
+
+[15:33:34.21] LOADING AND VALIDATING THE PACKAGE SCRIPT...
+[15:33:34.26] {"Running version":"3.5.10"}
+
+[15:33:34.129] Connecting to twdeqms@steris.com.dev using SFDX CLI...
